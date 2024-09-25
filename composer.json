@@ -1,9 +1,15 @@
 {
     "name": "mikhail/hexlet-php",
-    "autoload": {
-        "psr-4": {
-            "Mikhail\\HexletPhp\\": "src/"
-        }
+    "autoload": {	
+	 "files": [
+            "src/Runner.php"
+        ]
+
     },
-    "require":{}
+    "require":{
+        "illuminate/collections": "^10.48"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    }
 }
